@@ -25,15 +25,50 @@
     <header>
 
     </header>
-    <main>
-        <section class="flex justify-center">
-            <div class="mockup-phone"></div>
-            <div class="camera"></div>
-            <div class="display">
-                <div class="artboard artboard-demo phone-3">
-                    
+    <main class="flex justify-center">
+        <section>
+            <div class="mockup-phone">
+                <div class="camera"></div>
+                <div class="display">
+                    <div class="artboard artboard-demo phone-3">
+                        <div class="stats shadow">
+                            <div class="stat">
+                                <div class="stat-title">Account Balance</div>
+                                <div class="stat-value">89,400</div>
+                            </div>
+                        </div>
+                        <div class="divider"></div>
+                        <!-- Features start -->
+                        <div>
+                            <button class="btn btn-lg">Add Money</button>
+                            <button class="btn btn-lg">Cash Out</button>
+                        </div>
+                        <!-- features end -->
+                        <div class="divider"></div>
+                        <!-- Add money form start -->
+                        <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                            <form class="card-body">
+                                <div class="form-control">
+                                    <label class="label">
+                                        <span class="label-text">Amount</span>
+                                    </label>
+                                    <input autocomplete="off" type="text" placeholder="Amount" class="input input-bordered" required />
+                                </div>
+                                <div class="form-control">
+                                    <label class="label">
+                                        <span class="label-text">4 Digit Pin</span>
+                                    </label>
+                                    <input type="password" placeholder="PIN Number" class="input input-bordered"
+                                        required autocomplete="off" />
+                                </div>
+                                <div class="form-control mt-6">
+                                    <button class="btn btn-primary">Cash In</button>
+                                </div>
+                            </form>
+                        </div>
+                        <!-- Add money form end -->
+                    </div>
                 </div>
-            </div>
             </div>
         </section>
     </main>
