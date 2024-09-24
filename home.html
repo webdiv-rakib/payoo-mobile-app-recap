@@ -34,7 +34,7 @@
                         <div class="stats shadow">
                             <div class="stat">
                                 <div class="stat-title">Account Balance</div>
-                                <div class="stat-value">89,400</div>
+                                <div id="available-balance" class="stat-value">89400</div>
                             </div>
                         </div>
                         <div class="divider"></div>
@@ -52,17 +52,18 @@
                                     <label class="label">
                                         <span class="label-text">Amount</span>
                                     </label>
-                                    <input autocomplete="off" type="text" placeholder="Amount" class="input input-bordered" required />
+                                    <input id="input-amount" autocomplete="off" type="text" placeholder="Amount"
+                                        class="input input-bordered" required />
                                 </div>
                                 <div class="form-control">
                                     <label class="label">
                                         <span class="label-text">4 Digit Pin</span>
                                     </label>
-                                    <input type="password" placeholder="PIN Number" class="input input-bordered"
-                                        required autocomplete="off" />
+                                    <input id="user-pin" type="password" placeholder="PIN Number"
+                                        class="input input-bordered" required autocomplete="off" />
                                 </div>
                                 <div class="form-control mt-6">
-                                    <button class="btn btn-primary">Cash In</button>
+                                    <button id="cash-in-btn" class="btn btn-primary">Cash In</button>
                                 </div>
                             </form>
                         </div>
@@ -75,6 +76,8 @@
     <footer>
 
     </footer>
+    <script src="js/utilitize.js"></script>
+    <script src="js/add-money.js"></script>
 </body>
 
 </html>
