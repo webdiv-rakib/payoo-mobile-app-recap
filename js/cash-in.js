@@ -11,6 +11,13 @@ document.getElementById("cash-in-btn").addEventListener('click', function (event
         const newBalance = availableBalance + addMoney;
         console.log(newBalance);
         document.getElementById("available-balance").innerText = newBalance;
+        // add to transaction history
+        const log = document.createElement('p');
+        log.innerText = `Added: ${addMoney} Tk. New Balance: ${newBalance}`;
+        console.log(log);
+
+        // should be a common function
+        document.getElementById("transaction-container").appendChild(log);
     }
     else {
         alert("wrong");

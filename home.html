@@ -40,13 +40,15 @@
                         <div class="divider"></div>
                         <!-- Features start -->
                         <div>
-                            <button class="btn btn-lg">Add Money</button>
-                            <button class="btn btn-lg">Cash Out</button>
+                            <button id="add-money-button" class="btn btn-lg">Add Money</button>
+                            <button id="cash-out-button" class="btn btn-lg">Cash Out</button>
+                            <button id="transaction" class="btn btn-lg">Transaction</button>
+
                         </div>
                         <!-- features end -->
                         <div class="divider"></div>
                         <!-- Add money form start -->
-                        <div class="hidden card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                        <div id="cash-add-form" class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
                             <form class="card-body">
                                 <div class="form-control">
                                     <label class="label">
@@ -69,7 +71,7 @@
                         </div>
                         <!-- Add money form end -->
                         <!-- cash out form start -->
-                        <div class=" card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                        <div id="cash-out-form" class="hidden card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
                             <form class="card-body">
                                 <div class="form-control">
                                     <label class="label">
@@ -91,6 +93,14 @@
                             </form>
                         </div>
                         <!-- cash out form end -->
+                        <!-- transaction start -->
+                        <div id="transaction-form" class="hidden">
+                            <h2>Transaction History</h2>
+                            <div id="transaction-container">
+
+                            </div>
+                        </div>
+                        <!-- transaction end -->
                     </div>
                 </div>
             </div>
@@ -104,6 +114,7 @@
     <script src="js/cash-in-function.js"></script>
     <script src="js/cash-in.js"></script>
     <script src="js/cash-out.js"></script>
+    <script src="js/features.js"></script>
 </body>
 
 </html>
