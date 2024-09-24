@@ -6,6 +6,10 @@ document.getElementById("cash-in-btn").addEventListener('click', function (event
     const userPin = getInputFieldById("user-pin");
     const availableBalance = getTextValueById("available-balance")
     console.log(addMoney, userPin);
+    if (isNaN(addMoney)) {
+        alert("Failed to add money");
+        return;
+    }
 
     if (userPin === 12345) {
         const newBalance = availableBalance + addMoney;
